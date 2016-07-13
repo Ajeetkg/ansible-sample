@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  vars:
+    http_port: 80
+    max_clients: 200
+  remote_user: root
+  tasks:
+  - name: ping the message
+    debug:
+      msg: echo "hello world"
+
+  - name: print
+    debug: msg="System {{ inventory_hostname }}"
+
+  - name: print the template variable name
+    debug:
+      msg: platformUrl value is {{ platformApiUrl }}

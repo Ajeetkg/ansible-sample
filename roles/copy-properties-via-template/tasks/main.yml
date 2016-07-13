@@ -1,0 +1,16 @@
+---
+  - name: Ping the machine
+    ping:
+
+  - name: Delete the existing file if they exists in the tmp directory
+    file: path=/tmp/wac state=absent
+
+  - name: Create the WAC directory in the tmp folder
+    file: path=/tmp/wac state=directory
+
+
+  - name: Copy the template to the tmp directory
+    template: src=../templates/authConfig.json dest=/tmp/wac/authConfig.json
+
+  - name: Copy the Constants.ts file to the tmp directory
+    template: src=../templates/Constants.ts dest=/tmp/wac/Constants.ts

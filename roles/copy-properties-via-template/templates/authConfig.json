@@ -1,0 +1,8 @@
+{
+  "PlatformUrl": "{{ PlatformUrl }}",
+  "PasswordAuthorizationValue": "{{ PasswordAuthorizationValue }}",
+  "ClientCredentialsAuthorizationValue": "{{ ClientCredentialsAuthorizationValue }}",
+  "clientID":"{{ clientID }}",
+  "clientSecret":"{{ clientSecret }}",
+  "applicationContext": "{{ applicationContext }}"
+}

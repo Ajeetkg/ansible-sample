@@ -1,0 +1,15 @@
+---
+# authConfig.json file
+PlatformUrl: https://platform.login.testing-domain.illumina.com/platform-services-manager
+PasswordAuthorizationValue: Basic bG9jYWwtYWNjb3VudHM6QnYkS2xtZldAJVhFUlRZbHR3cWJq
+ClientCredentialsAuthorizationValue: Basic d2FjOlBqYmhlYjEyY3N3ZSFAI0AkcmVkZnNhbmpmYmoyM3Jkc3Y5MzJ1OTQ=
+clientID: wac
+clientSecret: Pjbheb12cswe!@#@$redfsanjfbj23rdsv932u94
+applicationContext: /wac
+
+# Constants.ts file
+platformApiUrl: "{{ PlatformUrl }}"
+platformAdminUrl: https://{0}.login.testing-domain.illumina.com/platform-services-admin
+publicDomainId: YXdzLXVzLXBsYXRmb3JtOjEwMDAwMDQyOjJjM2I4NmM4LWUzN2YtNGJjMy1hMDJlLTBmZmIyYTYyNmE3Yg
+defaultApplicationId: wac
+defaultGroupName: User

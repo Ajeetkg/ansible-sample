@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  vars:
+    http_port: 80
+    max_clients: 200
+  remote_user: root
+  pre_tasks:
+    - name: ping the message
+      debug:
+        msg: echo "hello world"
+  roles:
+    - { role: copy-properties-via-template }
